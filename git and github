@@ -1,0 +1,1142 @@
+A)PYTHON
+
+GIT-for version control and collaboration
+POSTGRESQL-for managing database
+VS CODE-editing code
+PYTHON-programing language
+GITHUB-for hosting and sharing codes
+NETLIFY-for deploying website
+
+**KEY CONCEPTS**
+1.Version control - keeping track of code changes
+2.Repository(Repo) -  folder containing all your project files online
+3.Commit -> a snapshot of your changes
+
+Purpose of Git
+1.Track changes in code efficiently
+2.Collaborate on projects with other developers
+3.Revert changes in code locally
+4.Sync local files to remote repositories
+
+GIT AND GITHUB
+Git->is a version control system that helps developers track and manage changes in their codes.
+GitHub->its a cloud-based platform for hosting code in git repositories.
+      *->allows for easy collaboration and project management.*
+
+BASIC GIT COMMAND/CREATING A NEW REPOSITORY
+1.git init->initializes a new repository in your project
+2.git add .->adds all changes to the initialized git repository(the dot stands for all)
+3.git commit -m"name of the change"-a commit is a change in the codes
+4.git remote add origin(remote location)
+5.git push origin (branch name eg master)--> pushes your code to the default branch
+
+UPDATING GITHUB REPOSITORIES
+1.git add .
+2.git commit -m"name of change"
+3.git push origin"branch name"
+
+RETRIEVING PROJECT REMOTE LOCATION
+1.git clone project remote location.
+
+PYTHON PROGRAMMING LANGUAGE
+vs code-is an editor for editing codes
+python-is a sever side or brain of the computer and it runs own its own
+      *-its a high level interpreted programming language*
+
+      *-its designed to be easy to read and write*
+
+CHARACTERISTICS OF PYTHON
+1.its a high-level language(closer to human language than machine code)-can easily be understood by users
+2.its interpreted-you don't need to compile python code since the python interpreter runs the code directly(python interpreter reads codes line by line)
+3.its a general purpose language-can be used for web development, data analysis,automation,AI/ML(machine learning)
+
+python use-case
+1.during web development-using framework like flas,django
+2.data science-using framework like pandas, NumPy,matplotlip
+3.machine learning-TensorFlow,scikit-learn
+4.automation-used to write scripts to automate repetitive task
+
+IMPORTANCE OF PYTHON
+1.easy to learn and use
+2.it has large community
+3.its used in many fields
+
+RULE OF NAMING IN PROGRAMING
+1.no spacing during naming use underscore(_)
+2.use lowercase for now,snake_case(my_file),camel_case(myFile)
+3.a name cant start with a special character(the punction marks,space and numbers) apart from underscore
+4.u cant use key words like print,for,if
+5.case sensitive
+
+A function is a reusable block of codes used to do something or a task.All funtions must have brackets at the end
+Print() displays code output on the terminal
+
+VARIABLES
+its a container for storing data
+they are not written in quotation
+
+VARIABLES DATATYPES
+These are the kind of data stored in a variable
+1.strings-are all alphanumeric and special characters enclosed in quotations
+2.integers-are whole numbers
+3.floats-are decimal numbers
+4.boolean-true or false
+All variables are classes in python.type function helps us to know the class of a function
+
+STRINGS
+When we add strings they concat they do not sum up
+
+CHARACTERISTICS OF STRINGS
+1.is immutable-data cant be changed
+2.ordered-are in order
+
+Indexing and slicing
+indexing-is where each character in a string has a number
+from left we start with 0
+from right we start with -1
+slicing -is extracting a part of a string by writing [start_index:last_index+1]
+Specify the start index and the end index, separated by a colon, to return a part of the string.
+
+Slice From the Start
+
+By leaving out the start index, the range will start at the first character:
+Example
+
+Get the characters from the start to position 5 (not included):
+b = "Hello, World!"
+print(b[:5])
+
+Slice To the End
+
+By leaving out the end index, the range will go to the end:
+Example
+
+Get the characters from position 2, and all the way to the end:
+b = "Hello, World!"
+print(b[2:])
+Negative Indexing
+Use negative indexes to start the slice from the end of the string:
+Example
+
+Get the characters:
+
+From: "o" in "World!" (position -5)
+
+To, but not included: "d" in "World!" (position -2):
+b = "Hello, World!"
+print(b[-5:-2])
+
+
+
+STRING METHODS
+are used to manipulate string data
+read slide 13-27 and notes on w3schools which is online
+1.lower()-used to make strings in lowercase
+2.upper()-used to make strings in uppercase
+3.replace()-used to replace character eg x=x.replace('.',':')
+4.strip()-used to remove and add spaces before and after strings eg x=( 'stop' ) to ('stop')
+5.split()-is used to make lists for us to count each word
+6.len()-used to count the number inside a variable its a function not a method
+7.capitalize()-used to make first letter of a string to be capital
+8.count('')-used to count number of letters specified
+9.title()-used to make first later of each word in a string capital
+10.find('')-used to give the index number of a letter(if the letter is not there it will give u a -ve no)
+11.isapha()
+12.isnum(0=)
+13.index-used to give index of a number(if the letter is not there it will give u an error)
+14.swapcase(): Swaps the case of all characters
+15.startswith []
+INTERGERS AND FLOATS
+intergers-are whole numbers
+floats-are decimal numbers
+are used for arithmetic operations=
++
+-
+/
+*-multiplication
+% -modulus-it returns the reminder after dividing
+eg a=11,b=2 a%b=2
+**-power
+//-floor operation-returns whole number(quotiant) after dividing ignoring the decimal
+
+
+
+datatypes
+1.print()
+2.input()
+3.len()
+4.type()
+5.str()-converts variable into strings
+6.int(()-converts numeric variables into interger
+7.float()-converts numeric variables into decimal
+8.round()-used for rounding off
+9.list()-used to convert a tuple to list
+10.tuple()
+
+DATA STRUCTURES
+is used to store and organize multiple data in variables
+python inbuilt data structure:lists[]
+                              *tuples()*
+
+                              *sets{}*
+
+                              *dictionaries{}*
+
+lists
+its a data structure used to store multiple items of different datatypes like string,integers...
+are enclosed with []
+items are separated with commas
+
+xtics of lists
+mutable-items can be changed
+ordered-have an index
+items are separated with commas
+
+list method
+1.append-adds an element at the end of a list
+2.clear-clears all items in a list
+3.copy-creates a copy of a list
+4.extend-extends lists by appending elements from the list
+5.insert-inserts object before a given index
+6.remove-removes the first occurrence of a value
+7.pop-removes item on specific index
+8.reverse-reverses a list
+9.count-counts the occurrence of a value
+10.sort-arranges list in ascending order
+
+Membership
+we use in operator
+x=[10,20,30]
+print(30 in x)=true
+print(40 in x)=false
+
+TUPLEs
+are data structure used to store multiple immutable data of diff data types
+are enclosed in round brackets
+
+
+SETS
+its a data structure used to store multiple unique,unordered data of diff data type
+enclosed in curly brackets
+
+methods
+difference-returns the values in the first set and not in the second set
+union-unites the two sets then gets rid of the duplicate value
+symetric_difference-removes common numbers in the two sets
+intersection-returns value with values on both set
+
+
+DICTIONARIES
+data is being stored in key-value pair
+data is unordered-no index
+are mutable
+data are enclosed in {}
+keys must be strings and unique
+values can be of any data type
+
+PYTHON OPERATORS
+1.Arithmetic operators-used to perform arithmetic operarions
+2.comparison-less than(<),greater than(>),equality(==),less or equal to(<=),greater or equal to(>=),not equal to(!=)
+             *-comparison returns a Boolean*
+
+             *-used to compare values or variable*
+
+3.logical operators-used to combine multiple conditions
+and(and)-gives true if all conditions are true and false if one condition is false(looks for one false only)
+or(or)-returns true if at least one condition is true(looks for one true condition only)
+not() -it reverses the result:if answer is true then not gives the answer as false
+4.assignment operators-used to assign values to variables
+      *(=),(+=),(-=),(\*=)*
+
+
+CONDITIONAL STATEMENT
+are used to write codes on programs that perform different actions based on different conditions
+1.if statement-runs the block of code only when the condition is true
+2.if else statement-runs if the condition is false
+3.if elif else statement-
+4.nested if-is a statement inside another statement
+
+LOOP-used to repeat a block of code multiple times
+     *Types of loops*
+
+1.for loop-used to iterate over a sequence
+2.while loop-repeats a task while a condition is true
+for loop
+iterator variable-represents each item in the sequence
+
+for iterator_variable in sequence
+
+
+break-is used to stop the loop
+
+
+PYTHON FUNCTIONS
+a function is a reusable block of code used to perform a specific task
+a function can only be executed only when it is called by the name
+
+NB-functions are used to arrange and organize code
+Inbuilt function
+1.print()
+2.type()
+3.sum()
+4.len()
+5.str()
+6.input()
+7.int()
+8.float()
+9.list()
+10.round()
+11.set()
+12.tuple()
+13.range()
+14.dict()
+Custom functions
+are funtions created to perform some task
+steps for creating custom functions
+1.define the function by using the def keyword
+2.give the function a name(to tell us more about the task of the function)
+3.it must have brackets-parameters
+4.create a block
+
+syntax
+def name():
+*block of code*
+
+
+Parameters-are variables used inside the functions
+Arguments-are exact values passed when functions are called
+
+A function:
+takes in some data
+performs some operation with that data
+returns the output
+
+B)SQL
+ways of storing data:
+1.flash disks
+2.cloud
+3.excel
+4.databases
+
+-what is a database
+-types of database
+-why we use database
+-what is sql and why it matters
+-how to create a database
+-how to create database tables
+-how to store data on a database
+-how to retrieve database data
+
+
+    *DATABASE-is the brain of any modern system*
+
+-is an electronic  data storage
+-helps in storing large amount of data in an organized,structured way using tables
+-its a collection of organized and well structured data
+
+SQL-structured query language
+
+importance of database
+1.organizes data storage for easy access
+2.fast and accurate data storage and retrieval
+3.multiple users can use the same database
+4.data security and integrity
+
+
+
+              *TYPES OF DATABASE*
+
+1.RELATIONAL DATABASES
+-stores data in tables
+-Tables is related through keys
+-sql is used to interact with data
+eg:postgresql,mysql,sqlite,oracle(enterprise)
+-best for structured data
+2.NON-RELATIONAL DATABASES
+-use documents,graphs,key-value pairs not tables
+-great for big data
+-more flexible for unstructured data
+eg:mongodb,redis,dynamodb,apache,cassandra
+
+excel                     sql
+1.we have sheets      -   we have tables
+2.workbooks are created-  database are created
+
+
+Relationships and erd
+-tables are related using keys(primary key and foreign keys)
+-all tables must have primary keys
+-only child tables have foreign keys
+-a foreign key is a primary key on parents table
+
+ERD(entity relation diagram)
+-is a visual representation of database tables and how they are related
+
+IDENTIFY PARENT AND CHILD TABLES ON JUMIA
+
+parent                    child
+
+category                  products
+user                      vendors,customers,employees
+customers                   orders
+orders                     payments
+
+
+RELATIONSHIPS AND ERD
+-they are key components in database
+-a relationship describes how two or more entities(tables) are associated
+
+Types of relationships
+1.one_to_one-is when a record in a table is linked to one and only record in another table
+2.one_to_many-is when a record in a table is linked to many records in a table
+3.many_to_many-is when many records in a table are linked to many records in another table
+
+
+ERD(entity relationship diagram)
+erd components
+1.entities
+2.relationships
+3.attributes-columns
+
+
+SQL(structured query language)
+is used to interact with relational database
+always ends with a semicolon to separate multiple SQL statements
+
+SQL queries
+this is a language understood by relational database
+keywords in sql are not always key sensitive
+a table is a structured set of data organized in rows and columns
+
+a query to create a database
+syntax:
+create database database_name;
+a query to create a table
+syntax:
+create table table_name(columns datatypes)
+
+select query
+used to fetch data stored in a database table
+
+display all shippers
+SELECT * FROM Shippers;
+
+display suppliername,contactname,city
+SELECT suppliername,contactname,city FROM Suppliers;
+
+display employee firstname,birthdate
+SELECT firstname,birthdate FROM Employees;
+
+display all categories
+SELECT * FROM Categories;
+
+display categoryname and description
+SELECT categogryname,description FROM Categories;
+
+select,where,and,or,like,not
+
+select distinct
+The SELECT DISTINCT statement is used to return only distinct (different) values.
+SELECT DISTINCT Country FROM Customers;
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+Returns the number of different countries in the Customers table
+
+where
+The WHERE clause is used to filter records.the data should be closed with ('')
+It is used to extract only those records that fulfill a specified condition.
+SELECT * FROM Customers
+WHERE Country='Mexico'
+
+and
+The AND operator is used to filter records based on more than one condition
+SELECT * FROM Customers
+WHERE Country = 'Spain' AND CustomerName LIKE 'G%';
+
+or
+The OR operator is used to filter records based on more than one condition
+SELECT *
+FROM Customers
+WHERE Country = 'Germany' OR Country = 'Spain'
+
+not
+The NOT operator is used in combination with other operators to give the opposite result, also called the negative result.
+
+Select only the customers that are NOT from Spain:
+SELECT * FROM Customers
+WHERE NOT Country = 'Spain';
+
+like
+the LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+There are two wildcards often used in conjunction with the LIKE operator:
+
+     *The percent sign % represents zero, one, or multiple characters*
+
+     *The underscore sign \_ represents one, single character*
+
+NULL value
+is a field/column with no value
+
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NULL;
+
+not null
+is a field with values
+
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NOT NULL;
+
+Select all customers that starts with the letter "a":
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+Show customers who come from brazil or italy.
+SELECT * FROM Customers WHERE country ='brazil' or country = 'italy';
+
+Display Customers who have the word ‘son’ in their CustomerName.
+SELECT * FROM Customers WHERE customername like '%son%';
+
+order by
+To sort records in ascending or descending order
+SELECT * FROM customers order by customerid desc;
+
+display all orders and order it by orderdate in descending order
+SELECT * FROM orders  order by orderdate desc;
+
+between
+display orders made in the year 1997
+
+display all products with price between 50 to 100 in desc
+SELECT * FROM products  where price between 50 and 200 order by price desc;
+
+SQL aggregate functions
+An aggregate function is a function that performs a calculation on a set of values, and returns a single value.
+used to aggregate columns with numbers
+Aggregate functions ignore null values (except for COUNT()).
+
+    *MIN() - returns the smallest value within the selected column*
+
+    *MAX() - returns the largest value within the selected column*
+
+    *COUNT() - returns the number of rows in a set*
+
+    *SUM() - returns the total sum of a numerical column*
+
+    *AVG() - returns the average value of a numerical column*
+
+
+
+
+The SQL MIN() and MAX() Functions
+The MIN() function returns the smallest value of the selected column.
+SELECT MIN(Price)
+FROM Products;
+The MAX() function returns the largest value of the selected column.
+SELECT MAX(Price)
+FROM Products;
+
+When you use MIN() or MAX(), the returned column will not have a descriptive name. To give the column a descriptive name, use the AS keyword:
+Example
+SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+
+Here we use the MIN() function and the GROUP BY clause, to return the smallest price for each category in the Products table:
+Example
+SELECT MIN(Price) AS SmallestPrice, CategoryID
+FROM Products
+GROUP BY CategoryID;
+
+count
+The COUNT() function returns the number of rows that matches a specified criterion.
+Example
+Find the total number of rows in the Products table:
+SELECT COUNT(*)
+FROM Products;
+
+you can add a WHERE clause to specify conditions:
+Example
+
+Find the number of products where Price is higher than 20:
+SELECT COUNT(ProductID)
+FROM Products
+WHERE Price > 20;
+
+
+
+PSQL SHELL
+-postgres command line
+-used for crud operation
+
+C-create
+R-read
+U-update
+D-delete
+
+THE COMANDS-not a must to end with a semi colons
+1.\l-lists all databases
+2.\c-used to connect database
+3.\dt-used to display tables
+4.\d-displays a specific table
+
+how to create a table
+syntax:create table table_name(column1 datatype constraints,column2 datatype constraints );
+
+datatype
+1.integers(int)-whole numbers
+2.varchar(n)-alphanumeric characters(n is the max number of characters)-when insert data here it must have ('')
+3.datetime or timestamp-for date and time
+4.text-for long text(descriptions)-when insert data here it must have ('')
+
+constraints
+are rules defined on table columns for integrity and accuracy
+eg:
+1.primary key-uniquely identifies each record in the table
+2.foreign key- used to link parent to child
+3.not null-Ensures that a column cannot have a NULL value
+4.unique-data in this column can't be the same
+5.default-sets a default value if non is provided
+6.serial-used for ids and it automatically increases numeric primary key
+
+insert data
+syntax:insert into table name(column name) values(data being entered)
+
+It is also possible to insert multiple rows in one statement.
+To insert multiple rows of data, we use the same INSERT INTO statement, but with multiple values:
+syntax:INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES
+('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),
+('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),
+('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');
+
+create a table courses with columns(id,course_name,duration,start_date,descripton)
+insert atleast 5 courses
+
+create table courses(id serial primary key,course_name varchar(255) unique not null,duration varchar(100) not null,start_date timestamp not null,fees varchar(255) default 'free',description text not null);
+
+	enrollments table
+enrollments(enroll_id(pk),student_id(fk),course(id(fk),date) Timestamp
+create table enrollments (enroll_id serial primary key not null,student_id int not null,course_id int not null,date Timestamp not null,FOREIGN KEY(student_id) REFERENCES students(student_id),FOREIGN KEY(course_id) REFERENCES courses(course_id));
+
+
+drop table
+The DROP TABLE statement is used to drop an existing table in a database.
+Syntax
+DROP TABLE table_name;
+Note: Be careful before dropping a table. Deleting a table will result in loss of complete information stored in the table!
+
+SQL TRUNCATE TABLE
+The TRUNCATE TABLE statement is used to delete the data inside a table, but not the table itself.
+TRUNCATE TABLE table_name;
+
+Deleting  a table(use drop table to delete a table)
+syntax:delete from table_name;
+
+deleting records
+syntax:delete from table_name where condition;
+
+
+updating records in a table
+syntax:update  table_name set name='new name' where=condition;
+update courses set course_name='education' where id=3;
+
+
+
+
+.1.Show customers who come from brazil or italy
+SELECT * FROM Customers where country='brazil' or country='italy';
+
+.2.Display Customers who have the word ‘son’ in their CustomerName.
+SELECT * FROM Customers where customername like '%son%';
+
+3.Display orders made in the month of October 1996, display in asc order.
+SELECT * FROM orders where orderdate between #/10/01/1996# and #10/31/1996# order by orderdate asc;
+
+4.Find the total orders shipped by each of the 3 shippers.
+SELECT shipperid,count(*) as total_orders from orders group by shipperid;
+
+.5.Display products whose price is above 25.
+SELECT * FROM products where price > 25;
+
+.6.Insert a customer in the customers table,view the record and update the record
+insert into customers(customername,contactname address,city,postalcode,country)values('Huda Ali','John Andrwes','Cassandra street','Berlin','24600','Germany');
+select * from customers where customerid = 92;
+update customers set contactname='Alfred ',city='Eldoret' where customerid=92;
+
+7.Insert an order for the Customer inserted in number 6 above,choose employee and shipper.
+insert into orders (customerid,employeed,orderdate,sipperid)values(92,10,'05/27/2025'2);
+
+8.Insert a new record in the Products table attach them to an existing supplier and category.
+insert into products(productname,suplierid,categoryid,unit,price)
+values('ace',15,3,'11 bottles','450');
+
+9.Insert an orderdetail using the order in 7 above and product in 8.
+insert into ordersdetails(orderid,productid,quatity)values(10444,78,9)
+10.Delete Customer whose CustomerID is 3.
+delete from customers where customerid =3
+
+
+sales_per_product
+select products.name as p_name , sum(products.selling_price * sales.quantity) as total_sales from sales inner join products on products.id = sales.pid group by p_name ;
+
+profit per product
+select products.name as p_name, sum((products.selling_price -products.buying_price)* sales.quantity) as profit from products inner join sales on products.id = sales.pid group by products.id ;
+
+profit per day
+select date(sales.created_at) as date , sum((products.selling_price -products.buying_price)* sales.quantity) as profit from products join sales on products.id = sales.pid group by(date);
+
+sales per day
+select date(sales.created_at) as date , sum(products.selling_price * sales.quantity) as total_sales from sales inner join products on products.id = sales.pid group by(date);
+
+
+
+C)HTML - HYPERTEXT MARKUP LANGUAGE - a markup language - structure content on the web
+Hypertext - text that links to other documents or pages
+Markup - labels / tags that structure a documents
+-labels plain text data
+
+Hi My name is Jane - 1st paragraph - bolder
+My age is 24
+
+Hi My name is Joe - 2nd paragraph -bolder
+My age is 23
+
+When you open a webpage in the browser:
+1.The browser loads the HTML file
+2.Browser reads the tags and builds the document structure
+3.Apply CSS and run JS
+
+HTML - Structure
+CSS - Style & Aesthetics
+JS - behaviour
+
+HTML is made up of :
+1.Elements - entire content + opening tag + closing tag
+
+e.g <p> Hi My name is Joe </p>
+
+2.Tags - labels used to wrap content
+    *-Opening tags <>*
+
+    *-Closing tags </>*
+
+    *Note: Not all tags have opening and closing structures*
+
+
+
+
+3.Attributes - give more description to html tags
+        *name:value*
+p - paragraphs
+h - headings - labels for titles
+h1 - h6
+h1 - largest heading
+h6 - smallest heading
+
+Displaying Images in html
+
+<img>
+has 2 major attributes:
+1.src - source - primary source of your image file
+2.alt - alternative - fallbaack option incase src doesnt display image
+
+
+
+links
+->Links allow users to navigate from one resource to another:It could be:
+1.webpage
+2.file - pdfs, images, videos
+3.email address
+4.phone
+5.A section with the same page
+6.external website
+
+Webpage vs website
+Webpage - single html file in the browser
+Website - collection of webpages
+
+Links in html are enforced using archor tags <a> </a>
+
+<a href=""></a>
+Anchor tag attributes
+1.href - destination/url of the resource to be accessed
+2.target - specifies where to access / open the resource
+-> self (default) - opens a resource in the same tab / window
+-> blank - opens a resource in a new tab or window
+
+https://www.google.com/
+
+TYPES OF Links
+1.External links - points to an external website
+2.Internal links - points to another page in the same website
+3.Email links
+4.Phone links
+5.Anchor links - points to another section within the same page
+
+**Comments
+->Short texts used to document code -> readability & explanations
+
+lorem - placeholder text in Latin
+
+Icons
+Graphical symbols e.g instagram, facebook, linkedin, x, hp,
+
+LISTS
+used to group and organize info for purposes of readability
+Types of fruits
+1.Mango
+2.Apple
+
+<li> </li>
+Types of lists
+1.Unordered Lists - have no numbered sequence -> displaay items with bullets by default
+-> <ul> </ul>
+2.Ordered Lists - have a numbered sequence-> when order matters
+-> types of sequence -> 1,2,3 -> a,b,c -> i,ii,iii
+-> by default ol uses 1,2,3
+->two major attributes
+**type - sequence type
+**start - starting point
+3.Description lists - define terms and their explanations - dl
+dt - definition term - heading
+dd - definition description - provides info on dt
+
+NESTED LISTS
+-> Lists within other lists
+
+TABLES
+-> displays structured data in tabular form
+-> <table> </table>
+-> A table has 2 sections:
+1.head - <thead> </thead> -> table heading -> column headings
+-tr - table row
+-th - a single cell in table heading
+2.body -<tbody> </tbody> -> table body -> main content area
+tr - table row
+td - table data - a single cell in tr in tbody section
+
+Table Attributes
+1.border
+2.width
+3.height
+4.cellpadding -> spacing inside a cell
+5.cellspacing -> spacing outside the cell / spacing between cells
+
+
+HTML FORMS
+- Allow us to take user input -login , registration
+- <form> </form>
+Form building blocks
+1.inputs - allow the user to fill in data
+2.labels - caption / label inputs
+3.button - submit forms
+
+Input Categories -> <input type="">
+1.Textual Input - text based data
+    *-type="text" - single line text input - name, username, product name*
+
+    *-type="email" - accepts valid email addresses*
+
+    *-type="password" - sensitive inputs - hides password characters using dots / stars*
+
+    *-type="tel" - phone number inputs*
+
+
+
+
+2.Numeric Input - numeric values
+    *-type="number" - allows for numeric inputs only* 
+
+
+
+
+3.Choice Input - select options
+    *-type="checkbox" - can allow for multiple selection from a group*
+
+    *-type="radio" - used to select one option from a group - has to have name attribute*
+
+    *-select - select options from a dropdown*
+
+4.File and Media Input - upload files
+    *-type="file"* 
+
+5.Buttons
+    *-type="submit"*
+
+    *-type="button"*
+
+    *-type="reset"*
+
+    
+
+
+6.Date and Time Inputs -
+    *-type="date" - date picker*
+
+    *-type="time" - time picker*
+
+
+INPUT ATTRIBUTES
+1.type - defines the type of input
+2.id - unique identifier for the input
+3.placeholder - hint text before a user types
+4.maxlength - defines max no of characters an input can take
+5.required - an input must be filled before form submission
+6.min/max
+
+
+
+D)CSS
+CSS - UI - Cascading Style Sheet - focuses on design and presentation of a HTML document
+
+
+div - block level element ussed to group multiple sections / elements together
+**takes up the full width available
+**starts on a new line by default
+
+span - inline element - takes up as much content as possible
+**used to style / highlight small pieces of text inside another element
+**doesnt start on a new line
+
+HOW TO ADD CSS TO A WEBPAGE
+-There are 3 ways of applying css to a webpage:-> choice depends on how much styling is needed
+1.Inline css
+** quick and short css - applied on the element directly using style attribute
+** useful when not much css is needed or when testing designs
+
+2.Internal css
+** written outside the elements but still inside the html document using style tags <style> </style>
+** written in the head section
+** useful for when you have moderate amount of css to apply but for one page
+
+3.External css
+** css is written in an external file (.css) and linking it to a html document using link tag (placed in head section)
+** very practical when a lot of css is to be applied
+** this is the most efficient and recommended wy of writing css
+
+
+CSS SYNTAX
+Consists of the following parts:
+1.selector - the element to be styled
+2.property name - what style to applied
+3.value - specific value attached to a property
+
+<p>A scripting language used to make web pages interactive</p>
+
+color="blue"
+
+**color
+**background-color _colors cn be picked using actual color values, rgb values, hex codes
+black -#000000
+red -#ff0000
+blue - #0000ff
+
+font properties
+font-size - controls text size
+font-weight - controls thickness of text
+font-style - whether a text is slanted or not ----normal / italic / oblique
+font-family - sets the typeface (design of the text)
+
+SELECTORS
+-Paterns that determine which element should css be applied to
+1.Universal selector - * - selects all elements in your page
+2.Type selector - selects elements based on type -> p,div,h2,h3
+3.Class selector - selects elements with a specific class attribute
+4.ID Selector - selects an element by their unique id attribute
+5.Group selector - select multiple elements at once
+6.Descendant selector - target an element inside another element
+
+CSS BOX MODEL
+-Is the way CSS describes how every element is structured on a webpage and how it occupies that space
+-Every element is a rectangular box made up of 4 parts:
+1.Content - text ,image or other data
+2.Border - outer lining surrounding an element
+3.Padding - spacing between the content and the border
+4.Margin - spacing outside the border between an element and other elements
+
+MARGIN
+- Defines spacing outside the borders of an element
+- Has no background colour / is transparent
+**Properties
+-margin-top
+-margin-right
+-margin-bottom
+-margin-left
+-margin(shorthand) - clockwise direction
+
+
+PADDING
+-defines the space between the content and the border
+**has background colour
+**Properties
+-padding-top
+-padding-right
+-padding-bottom
+-padding-left
+-padding(shorthand)
+
+-TASK -slide 34 and 36
+** research on background-image
+**margin and padding ,background-color
+
+**border-radius - applies curvature to edges of a border
+**It can create a full circle -same width and height and border-radius of 50%
+
+
+-> Build that navbar using list element and display flex - research on display property -<
+
+
+CSS POSITIONING
+-Controls how elements aare placed on a page
+
+Why Positioning Matters?
+1.Precise Control -place elemnents exactly where you want
+2.Layering - controls what sits on top -use z index
+3.Complex UI patterns - modals, dropdowns ,sticky heaaders , tooltips
+
+TYPES OF POSITIONING
+1.static
+** default positioning
+** elements follow normal document flow (top to bottom ,left to right)
+** offsets dont apply in position:static\
+**offsets are properties used to move elements - top, right , bottom , left
+
+2.relative
+*elements still remain in normal document flow but can visually shifted relative to their
+original / normal / expected position
+**allows for offsets
+**other elements around it dont move
+
+
+3.absolute
+**positions an element relative to its ancestor's position which can have any position other than static
+** ignores normal document flow -ignores other elements
+
+4.fixed
+**positions an element relative to the viewport
+**ensures an element always remains in your viewport
+**doesnt move when the page is scrolled
+
+5.sticky
+**acts like relative until the scroll position reaches the threshold
+
+6.inherit, unset
+
+
+
+DISPLAY
+Controls how an element is displayed on a page (layout)
+
+1.block
+** element takes up the full width of its parent container
+** element always starts on a new line
+** you can set width , height , margins and padding
+
+2.inline
+** doesnt start on a new line
+** only takes up as much width as the content
+** you cant set width or height (only allows margins and padding horizontally)
+
+
+3.inline-block
+** similar to inline but allows for setting of width and height
+
+4.none
+**completely removes an element from the layout
+-> the element isnt visible and doesnt take up space
+
+5.flex
+**turns the element into a flex container
+** by default it arranges elements in row format
+
+**display:flex -> creates a flex container for you to decide how to place items
+
+**flex-direction - decides the axis and order in which elements are arranged
+                *-> row(default)*
+
+                *-> row-reverse* 
+
+                *-> column*
+
+                *-> column-reverse*
+
+
+
+
+**justify-content - how items are aligned in an axis
+    *-> space between - items spread out leaving no spaces at the edges*
+
+    *-> space around - equal space around each item*
+
+    *-> space evenly - equal space everywhere*
+
+    *-> center - center items*
+
+    *-> flex start - stick to the start*
+
+    *-> flex end - stick to the end* 
+
+
+Z-Index
+-Stacking and layering
+-Allows you control what element appears on top / below another
+-For z-index to be applied , an element has to have any other position other than the default (static)
+
+
+E)BOOTSTRAP
+-Is an open source CSS framework that helps us build responsive websites quickly without having
+to write our own custom CSS
+-It comprises of pre-built components and associated utilities
+
+UTILITIES
+-class helpers that act as a shorthand for writing custom css
+font-size -fs
+font-weight - fw
+margin -m
+padding -p
+text- casing & alignment
+<hr/>-used for add lines 
+
+GRID
+-System for organizing content on a webpage using rows and columns (just like a table but more flexible)
+-> helps align items neatly and responsively across different screen sizes
+
+Purpose
+1.Consistency - uniform layout, spacing and alignment
+2.Responsiveness - webpage adapts automatically to different screen sizes
+
+**Container** - wrappers for your grid
+-provide padding and centering of content
+1. .container - fixed width, responsive to breakpoints
+2. .container-fluid - full-width , spans the entire viewport
+
+**rows** - flex containers that holds the columns
+.row -> ensures columns are aligned
+
+**columns** - hold the actual content and follow the 12-column layout system
+.col -> auto equal width
+
+m- margin all round
+mx -> x axis
+my -> y axis
+me - margin end (right)
+ms - margin start (left)
+
+
+Bootstrap is mobile-first in terms of responsiveness
+-> start from the smallest screen and move upward
+-> define how columns behave to various screen sizes starting from the smallest
+
+**Breakpoints - defining points where your layout changes depending on screen width
+-> sm, md ,lg ,xl ,xxl
+
+col-12 -> full stack width -> default behaviour for an xs screen size
+col-sm -> alignment of columns on a small screen size
+
+
+profit per day
+select date(sales.created_at) as date , sum((products.selling_price -products.buying_price)* sales.quantity) as profit from products join sales on products.id = sales.pid group by(date);
+
+sales per day
+select date(sales.created_at) as date , sum(products.selling_price * sales.quantity) as total_sales from sales inner join products on products.id = sales.pid group by(date);
