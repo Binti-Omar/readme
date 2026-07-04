@@ -1,0 +1,12 @@
+computer program
+A computer program is a set of instructions used to make computers perform a task or do something
+A complete set of known commands is called an instruction list, sometimes abbreviated to IL.
+
+Languages
+A language is a means (and a tool) for expressing and recording thoughts.
+
+We can say that each language (machine or natural, it doesn't matter) consists of the following elements:
+1.an alphabet-a set of symbols used to build words of a certain language (e.g., the Latin alphabet for English, the Cyrillic alphabet for Russian, Kanji for Japanese, and so on)
+2.a lexis-(aka a dictionary) a set of words the language offers its users (e.g., the word "computer" comes from the English language dictionary, while "cmoptrue" doesn't; the word "chat" is present both in English and French dictionaries, but their meanings are different)
+3.a syntax-a set of rules (formal or informal, written or felt intuitively) used to determine if a certain string of words forms a valid sentence (e.g., "I am a python" is a syntactically correct phrase, while "I a python am" isn't)
+4.semantics-a set of rules determining if a certain phrase makes sense (e.g., "I ate a doughnut" makes sense, but "A doughnut ate me" doesn't)

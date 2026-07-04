@@ -39,11 +39,13 @@ RETRIEVING PROJECT REMOTE LOCATION
 1.git clone project remote location.
 
 PYTHON PROGRAMMING LANGUAGE
+It was created by Guido van Rossum, and released in 1991.
 vs code-is an editor for editing codes
 python-is a sever side or brain of the computer and it runs own its own
       *-its a high level interpreted programming language*
 
       *-its designed to be easy to read and write*
+	Python uses indentation to indicate a block of code.
 
 CHARACTERISTICS OF PYTHON
 1.its a high-level language(closer to human language than machine code)-can easily be understood by users
@@ -61,7 +63,7 @@ IMPORTANCE OF PYTHON
 2.it has large community
 3.its used in many fields
 
-RULE OF NAMING IN PROGRAMING
+RULE OF NAMING IN PROGRAMING (Variables/Functions/Classes)
 1.no spacing during naming use underscore(_)
 2.use lowercase for now,snake_case(my_file),camel_case(myFile)
 3.a name cant start with a special character(the punction marks,space and numbers) apart from underscore
@@ -69,11 +71,52 @@ RULE OF NAMING IN PROGRAMING
 5.case sensitive
 
 A function is a reusable block of codes used to do something or a task.All funtions must have brackets at the end
-Print() displays code output on the terminal
+Print() displays code output on the terminal.print and input are inbuilt functions in python.Input is a python tool for capturing user input directly from the console it reurns a string
 
 VARIABLES
 its a container for storing data
 they are not written in quotation
+
+Variables that are created outside of a function are known as global variables.
+Global variables can be used by everyone, both inside of functions and outside.
+
+Create a variable outside of a function, and use it inside the function
+x = "awesome"
+def myfunc():
+print("Python is " + x)
+myfunc()     output will be Python is awesome
+
+If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.
+Example
+Create a variable inside a function, with the same name as the global variable
+x = "awesome"
+def myfunc():
+x = "fantastic"
+print("Python is " + x)
+myfunc()
+print("Python is " + x)   output will be:Python is fantastic-for the first print
+Python is awesome-for the second print
+
+The global Keyword
+Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+To create a global variable inside a function, you can use the global keyword.
+Example
+If you use the global keyword, the variable belongs to the global scope:
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x)  output:Python is fantastic
+
+Also, use the global keyword if you want to change a global variable inside a function.
+Example
+To change the value of a global variable inside a function, refer to the variable by using the global keyword:
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x) output:Python is fantastic
 
 VARIABLES DATATYPES
 These are the kind of data stored in a variable
@@ -91,7 +134,7 @@ CHARACTERISTICS OF STRINGS
 2.ordered-are in order
 
 Indexing and slicing
-indexing-is where each character in a string has a number
+indexing-is where each character in a string has a number.This is used to access a specific value in a string.List indexing is zero-based, meaning the first element has an index of 0.
 from left we start with 0
 from right we start with -1
 slicing -is extracting a part of a string by writing [start_index:last_index+1]
@@ -131,10 +174,10 @@ print(b[-5:-2])
 STRING METHODS
 are used to manipulate string data
 read slide 13-27 and notes on w3schools which is online
-1.lower()-used to make strings in lowercase
-2.upper()-used to make strings in uppercase
+1.lower()-used to change all characters in the string to lower case
+2.upper()-used to capitalize all characters in the string
 3.replace()-used to replace character eg x=x.replace('.',':')
-4.strip()-used to remove and add spaces before and after strings eg x=( 'stop' ) to ('stop')
+4.strip()-used to remove before and after strings eg x=( 'stop' ) to ('stop')
 5.split()-is used to make lists for us to count each word
 6.len()-used to count the number inside a variable its a function not a method
 7.capitalize()-used to make first letter of a string to be capital
@@ -156,10 +199,14 @@ are used for arithmetic operations=
 *-multiplication
 % -modulus-it returns the reminder after dividing
 eg a=11,b=2 a%b=2
-**-power
+**-power/Exponential operator
 //-floor operation-returns whole number(quotiant) after dividing ignoring the decimal
+ round(value, decimals)
 
-
+You use triple quotes to create multiline strings in Python. This can be done with either triple single quotes (''') or triple double quotes (""").
+"""A triple-quoted string
+spanning across multiple
+lines using double quotes"""
 
 datatypes
 1.print()
@@ -224,14 +271,18 @@ difference-returns the values in the first set and not in the second set
 union-unites the two sets then gets rid of the duplicate value
 symetric_difference-removes common numbers in the two sets
 intersection-returns value with values on both set
+discard-Remove an element from a set if it is a member.Unlike set.remove(), the discard() method does not raise an exception when an element is missing from the set.
+pop-It removes and returns an element from the set.It raises a KeyError if the set is empty.The .pop() method removes and returns an arbitrary element from a set in one go. Because sets are unordered, you can’t predict which element you’ll get.If you call .pop() on an empty set, Python raises a KeyError exception rather than returning None or any other value.
 
+The union operator (|) is a binary operator that operates on sets. If used with a list or any other iterable type, it’ll raise a TypeError exception.
 
 DICTIONARIES
 data is being stored in key-value pair
 data is unordered-no index
 are mutable
 data are enclosed in {}
-keys must be strings and unique
+keys must be strings and unique Keys are case sensitive i.e  “Name” is different from “name”.
+You can get a list of all keys by using person.keys().
 values can be of any data type
 
 PYTHON OPERATORS
@@ -245,7 +296,9 @@ PYTHON OPERATORS
 and(and)-gives true if all conditions are true and false if one condition is false(looks for one false only)
 or(or)-returns true if at least one condition is true(looks for one true condition only)
 not() -it reverses the result:if answer is true then not gives the answer as false
-4.assignment operators-used to assign values to variables
+IN - used to check if a string is in a data structure (list, tuple)
+
+4.assignment operators-used to assign values to variables.These are operators used to shorten arithmetic operations operators.
       *(=),(+=),(-=),(\*=)*
 
 
@@ -259,10 +312,23 @@ are used to write codes on programs that perform different actions based on diff
 LOOP-used to repeat a block of code multiple times
      *Types of loops*
 
-1.for loop-used to iterate over a sequence
+1.for loop-used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
 2.while loop-repeats a task while a condition is true
 for loop
 iterator variable-represents each item in the sequence
+
+Looping through a Dictionary(more explanation is in w3schools)
+=>When looping through a dictionary we Iterate over the keys and values of a dictionary:
+example:person={“name”:”Techcamp”,”age”:25,”city”:”Nairobi”}
+for key,value in person.items():
+	print(key,value )#displays all items
+=>looping through keys alone you use person.keys()
+example:for key in person.keys():
+	print(key)#loops through all the keys
+=>looping through values alone you use person.values()
+for key in person.keys():
+	print(key)#loops through all the keys
+NB:Looping through multiple sequence you use  Zip inbuilt  function 
 
 for iterator_variable in sequence
 
@@ -281,7 +347,7 @@ Inbuilt function
 3.sum()
 4.len()
 5.str()
-6.input()
+6.input()-returns a string
 7.int()
 8.float()
 9.list()
@@ -691,7 +757,8 @@ select date(sales.created_at) as date , sum(products.selling_price * sales.quant
 
 
 
-C)HTML - HYPERTEXT MARKUP LANGUAGE - a markup language - structure content on the web
+C)HTML(HYPERTEXT MARKUP LANGUAGE)
+ - a markup language - structure content on the web
 Hypertext - text that links to other documents or pages
 Markup - labels / tags that structure a documents
 -labels plain text data
@@ -846,7 +913,7 @@ Input Categories -> <input type="">
 
 
 2.Numeric Input - numeric values
-    *-type="number" - allows for numeric inputs only* 
+    *-type="number" - allows for numeric inputs only*
 
 
 
@@ -859,7 +926,7 @@ Input Categories -> <input type="">
     *-select - select options from a dropdown*
 
 4.File and Media Input - upload files
-    *-type="file"* 
+    *-type="file"*
 
 5.Buttons
     *-type="submit"*
@@ -868,7 +935,7 @@ Input Categories -> <input type="">
 
     *-type="reset"*
 
-    
+ 
 
 
 6.Date and Time Inputs -
@@ -1055,7 +1122,7 @@ Controls how an element is displayed on a page (layout)
 **flex-direction - decides the axis and order in which elements are arranged
                 *-> row(default)*
 
-                *-> row-reverse* 
+                *-> row-reverse*
 
                 *-> column*
 
@@ -1075,7 +1142,7 @@ Controls how an element is displayed on a page (layout)
 
     *-> flex start - stick to the start*
 
-    *-> flex end - stick to the end* 
+    *-> flex end - stick to the end*
 
 
 Z-Index
