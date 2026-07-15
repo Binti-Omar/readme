@@ -65,9 +65,9 @@ IMPORTANCE OF PYTHON
 
 RULE OF NAMING IN PROGRAMING (Variables/Functions/Classes)
 1.no spacing during naming use underscore(_)
-2.use lowercase for now,snake_case(my_file),camel_case(myFile)
+2.use lowercase for now,snake_case(my_variable_name),pascal(MyVariableName),camel_case(myVarialeName):snake case-each word is separated by an underscore,camel case-each word except the first one starts with a capital letter,pascal
 3.a name cant start with a special character(the punction marks,space and numbers) apart from underscore
-4.u cant use key words like print,for,if
+4.u cant use key words like print,for,if,else,while Keywords are special reserved words in python
 5.case sensitive
 
 A function is a reusable block of codes used to do something or a task.All funtions must have brackets at the end
@@ -123,7 +123,7 @@ These are the kind of data stored in a variable
 1.strings-are all alphanumeric and special characters enclosed in quotations
 2.integers-are whole numbers
 3.floats-are decimal numbers
-4.boolean-true or false
+4.boolean-True or False(the capitalization is important!)
 All variables are classes in python.type function helps us to know the class of a function
 
 STRINGS
@@ -328,7 +328,7 @@ example:for key in person.keys():
 =>looping through values alone you use person.values()
 for key in person.keys():
 	print(key)#loops through all the keys
-NB:Looping through multiple sequence you use  Zip inbuilt  function 
+NB:Looping through multiple sequence you use  Zip inbuilt  function
 
 for iterator_variable in sequence
 
@@ -337,7 +337,7 @@ break-is used to stop the loop
 
 
 PYTHON FUNCTIONS
-a function is a reusable block of code used to perform a specific task
+a function is a reusable block of code used to perform a specific task.Functions are used only to organize your program.
 a function can only be executed only when it is called by the name
 
 NB-functions are used to arrange and organize code
@@ -377,7 +377,22 @@ takes in some data
 performs some operation with that data
 returns the output
 
-B)SQL
+Topic:
+characteristics
+importance
+naming rules
+variables
+datatypes
+data structures
+operators
+conditional statements
+loops
+functions
+
+
+B)SQL-structured query language
+SQL is a standard language for storing, manipulating and retrieving data in databases.
+
 ways of storing data:
 1.flash disks
 2.cloud
@@ -396,7 +411,7 @@ ways of storing data:
 
     *DATABASE-is the brain of any modern system*
 
--is an electronic  data storage
+-A database is a system for managing data that allows us to store data reliably, retrieve information efficiently, and manipulate data systematically Rows represent individual entities or events.Columns represent specific attributes or properties.
 -helps in storing large amount of data in an organized,structured way using tables
 -its a collection of organized and well structured data
 
@@ -473,6 +488,21 @@ SQL queries
 this is a language understood by relational database
 keywords in sql are not always key sensitive
 a table is a structured set of data organized in rows and columns
+
+Some of The Most Important SQL Commands
+
+    SELECT - extracts data from a database
+    UPDATE - updates data in a database
+    DELETE - deletes data from a database
+    INSERT INTO - inserts new data into a database
+    CREATE DATABASE - creates a new database
+    ALTER DATABASE - modifies a database
+    CREATE TABLE - creates a new table
+    ALTER TABLE - modifies a table
+    DROP TABLE - deletes a table
+    CREATE INDEX - creates an index (search key)
+    DROP INDEX - deletes an index
+
 
 a query to create a database
 syntax:
@@ -564,6 +594,20 @@ SELECT * FROM Customers WHERE country ='brazil' or country = 'italy';
 Display Customers who have the word ‘son’ in their CustomerName.
 SELECT * FROM Customers WHERE customername like '%son%';
 
+Display orders made in the month of October 1996, display in asc order.
+SELECT * FROM Orders where orderdate between '1996-10-01' and '1996-10-31' order by orderdate;
+
+Find the total orders shipped by each of the 3 shippers.
+SELECT ShipperID, COUNT(OrderID) AS TotalOrders
+FROM Orders
+GROUP BY ShipperID;
+
+Display products whose price is above 25 from the highest price.
+
+The SELECT TOP clause is used to limit the number of records to return.
+SELECT TOP 3 * FROM Customers;/SELECT * FROM Customers
+LIMIT 3;/SELECT TOP 50 PERCENT * FROM Customers;
+
 order by
 To sort records in ascending or descending order
 SELECT * FROM customers order by customerid desc;
@@ -599,7 +643,7 @@ The SQL MIN() and MAX() Functions
 The MIN() function returns the smallest value of the selected column.
 SELECT MIN(Price)
 FROM Products;
-The MAX() function returns the largest value of the selected column.
+2. The MAX() function returns the largest value of the selected column.
 SELECT MAX(Price)
 FROM Products;
 
@@ -614,7 +658,7 @@ SELECT MIN(Price) AS SmallestPrice, CategoryID
 FROM Products
 GROUP BY CategoryID;
 
-count
+3. count
 The COUNT() function returns the number of rows that matches a specified criterion.
 Example
 Find the total number of rows in the Products table:
@@ -629,7 +673,13 @@ SELECT COUNT(ProductID)
 FROM Products
 WHERE Price > 20;
 
-
+JOINS -->techtfq on youtube explains better
+Inner join/join-returns values present in both tables only
+Left join/Left outer join-inner join + any additional values in the left table (nb:placement of tables is important)
+Right join/right outer join-inner join + any additional values in the right table (nb:placement of tables is important)
+full join/full outer joins-inner join + left join + right join
+self join-can be used by any join to join a table to its self
+Cross join-used to join tables with no common column
 
 PSQL SHELL
 -postgres command line
