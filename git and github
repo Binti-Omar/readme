@@ -65,13 +65,13 @@ IMPORTANCE OF PYTHON
 
 RULE OF NAMING IN PROGRAMING (Variables/Functions/Classes)
 1.no spacing during naming use underscore(_)
-2.use lowercase for now,snake_case(my_variable_name),pascal(MyVariableName),camel_case(myVarialeName):snake case-each word is separated by an underscore,camel case-each word except the first one starts with a capital letter,pascal
+2.use lowercase for now,snake_case(my_variable_name),pascal(MyVariableName),camel_case(myVarialeName):snake case-each word is separated by an underscore,camel case-each word except the first one starts with a capital letter,pascal case-all words star with capital
 3.a name cant start with a special character(the punction marks,space and numbers) apart from underscore
-4.u cant use key words like print,for,if,else,while Keywords are special reserved words in python
+4.u cant use key words like print,for,if,else,while (Keywords are special reserved words in python)
 5.case sensitive
 
 A function is a reusable block of codes used to do something or a task.All funtions must have brackets at the end
-Print() displays code output on the terminal.print and input are inbuilt functions in python.Input is a python tool for capturing user input directly from the console it reurns a string
+Print() displays code output on the terminal. Print and input are inbuilt functions in python.Input is a python tool for capturing user input directly from the console it returns a string
 
 VARIABLES
 its a container for storing data
@@ -95,7 +95,7 @@ x = "fantastic"
 print("Python is " + x)
 myfunc()
 print("Python is " + x)   output will be:Python is fantastic-for the first print
-Python is awesome-for the second print
+                                         Python is awesome-for the second print
 
 The global Keyword
 Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
@@ -189,6 +189,8 @@ read slide 13-27 and notes on w3schools which is online
 13.index-used to give index of a number(if the letter is not there it will give u an error)
 14.swapcase(): Swaps the case of all characters
 15.startswith []
+
+
 INTERGERS AND FLOATS
 intergers-are whole numbers
 floats-are decimal numbers
