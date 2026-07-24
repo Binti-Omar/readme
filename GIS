@@ -1,0 +1,90 @@
+GIS
+Modules to learn:
+📘Module 1: GIS Fundamentals 
+What is GIS
+What is QGIS?
+Geographic Features
+Types of Geographic Features
+Spatial Data
+Attribute Data
+Difference Between Spatial Data and Attribute Data
+How to Identify Spatial vs Attribute Data
+
+📗 Module 2: Getting Started with QGIS
+Understanding the QGIS Interface
+📙 Module 3: Working with Vector Data
+📕 Module 4: Coordinate Reference Systems (CRS)
+📒 Module 5: Symbolizing and Styling Maps
+📓 Module 6: Editing Spatial Data
+📔 Module 7: Spatial Analysis
+📚 Module 8: Map Layouts and Printing
+🚀 Module 9: Real-World GIS Projects
+
+Module 1:GIS Fundamentals
+-GIS stands for Geographic Information System.
+-It's a system used to collect, store, analyze, and display information about places on Earth.
+-QGIS is simply the software we'll use.
+
+
+Geographic Features
+We learned that everything on a map is called a feature.Example school,river building...
+
+Types of Geographic Features(Geometry)
+the three geometry types:
+Point-is a single location like school,hospital,atm,tree,bus stop
+Line-is something that has length like roads,rivers,railway,power line
+Polygon-is Something that has an area like Country,Forest,Lake,Farm,Building
+
+One important thing to remember
+-Whether something is a point, line, or polygon depends on the level of detail.
+
+For example:
+Imagine you're making a map of Africa.
+Nairobi could be represented as a point because it's too small to draw as an area on a continent-wide map.
+
+Now imagine you're making a map of Nairobi County.
+Nairobi County would be a polygon because now you're showing its boundaries.So the same real-world object can sometimes be represented differently depending on the map's scale.
+
+✅ Feature – Any object on a map (road, river, school, building, forest, etc.)
+✅ Spatial data –(Asks Where the feature is) The location and shape of a feature.(point,line,polygon)  Maps = Spatial Data
+✅ Attribute data –(Asks What the feature is) Information stored about the feature.(name,type ...)  Tables = Attribute Data
+
+Difference Between Spatial Data and Attribute Data
+Always remember this:
+Spatial data answers "Where?"
+-The hospital is located here.
+-The road runs from Nairobi to Thika.
+-Karura Forest is represented by a polygon.
+Attribute data answers "What?"
+-Name,Area,Population,Number of beds,Tree species,Length of a road
+
+How to Identify Spatial vs Attribute Data
+Whenever you're confused, ask yourself:
+-Can I draw it on a blank map?
+Imagine I give you a blank sheet of paper.
+Information:
+Karura Forest has 1,000 tree species.
+Can you draw 1,000 tree species?
+❌ No.
+You can write it in a table, but you can't draw it.
+So it's an attribute.
+
+
+
+Module 2: Getting Started with QGIS
+Understanding the QGIS Interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
