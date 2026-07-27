@@ -1,6 +1,6 @@
 GIS
 Modules to learn:
-📘Module 1: GIS Fundamentals 
+📘Module 1: GIS Fundamentals
 What is GIS
 What is QGIS?
 Geographic Features
@@ -12,7 +12,12 @@ How to Identify Spatial vs Attribute Data
 
 📗 Module 2: Getting Started with QGIS
 Understanding the QGIS Interface
+types of GIS data
+Your First QGIS Project
+Adding Your First Layer
+Adding Your First Basemap (OpenStreetMap)
 📙 Module 3: Working with Vector Data
+What is Vector Data?
 📕 Module 4: Coordinate Reference Systems (CRS)
 📒 Module 5: Symbolizing and Styling Maps
 📓 Module 6: Editing Spatial Data
@@ -24,6 +29,22 @@ Module 1:GIS Fundamentals
 -GIS stands for Geographic Information System.
 -It's a system used to collect, store, analyze, and display information about places on Earth.
 -QGIS is simply the software we'll use.
+-A map is many layers stacked together.
+
+Two main types of GIS data
+
+✅ Vector data
+Represents features using points, lines, and polygons.
+Point → Hospitals, schools, bus stops.
+Line → Roads, rivers, power lines.
+Polygon → Counties, parks, lakes, buildings.
+✅ Raster data
+Represents the world as a grid of pixels.
+Examples:
+Satellite images
+Aerial photographs
+Elevation maps
+Temperature maps
 
 
 Geographic Features
@@ -73,18 +94,50 @@ So it's an attribute.
 
 Module 2: Getting Started with QGIS
 Understanding the QGIS Interface
+Menu Bar – Access to all QGIS functions.
+Toolbar – Quick-access buttons for common tools.
+Locator Bar – Search for tools, layers, commands, and more.
+Browser Panel – Browse your files and data sources.
+Layers Panel – Manage the layers in your project.
+Map Canvas – The area where your map is displayed.
+Status Bar – Shows coordinates, scale, CRS, and other project information.
+
+
+Your First QGIS Project
+Every time they start a new mapping task:
+Create a project folder.
+Save the QGIS project immediately.
+Keep all related data inside that folder.
+This keeps everything organized.
+
+
+Adding Your First Layer
+-Layer – A collection of related geographic data displayed on a map.Each layer is independent.
+-Think of the Layers Panel as a stack of transparent sheets.
+-Layer Order-is The order in which layers are stacked. Layers at the top are drawn above layers below them.order makes the map clear and easy to understand
+-Layer order matters because layers on top can hide layers below.
+-Symbology is how a layer looks on the map.
+-OpenStreetMap (OSM) is a free, editable map of the world created by people all over the world.
+-Adding OpenStreetMap gives us a basemap.A basemap is A map used as the background for displaying other geographic information its like the background of your project. It helps you understand where things are.
+-Examples of basemaps:
+OpenStreetMap (OSM)
+Satellite imagery
+Topographic maps
+Street maps
+
+
+Adding Your First Basemap (OpenStreetMap)
+Step 1
+
+In the Browser Panel, click the small arrow (▶) next to XYZ Tiles and It should expand.
+You should see something like:XYZ Tiles
+   			 OpenStreetMap
+Simply double-click "OpenStreetMap."
+Wait a few seconds.
+Your white map canvas should start loading a map of the world.
+You've just added your first GIS layer.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+Module 3: Working with Vector Data
+What is Vector Data?

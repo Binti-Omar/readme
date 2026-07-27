@@ -11,9 +11,6 @@
 *2.reactivity-being able to load data in a page*
 
 
-
-
-
 *Where to write js(js is written inside a script tag)*
 
 *1.internal(in a html file)*
@@ -23,12 +20,9 @@
 *-inside the body tag(common)*
 
 
-
 *2.external js*
 
 *-used when writing a lot of js*
-
-
 
 
 
@@ -39,9 +33,6 @@
 *2.boolean*
 
 *3.number(floats and integers)*
-
-
-
 
 
 *Variables*
@@ -60,8 +51,6 @@
 
 
 
-
-
 *How to output data in js*
 
 *-console.log() is used*
@@ -72,9 +61,8 @@
 
 
 
-
-
-*String methods-are special inbuilt function(most methods are accessed using the dot operater (.))*
+*String methods
+-are special inbuilt function(most methods are accessed using the dot operater (.))*
 
 *1) . length-used to know the length of a string*
 
@@ -107,6 +95,8 @@
 *15) .replace()-replaces values in a string*
 
 *16) .substring()*
+ 
+*17) .escape notation-\n(for starting a new line ect
 
 
 
@@ -145,15 +135,9 @@
             \*-not-it reverses the result: if answer is true then not gives the answer as false(!)\*
 
 
-
-
-
-
 *3.arithmetic operators-are used to perform arithmetic operation(+,-,/,\*,\*\*,%,++,--,//)*
 
 *4.assignment operators-used to assign values to variables (=,+=,-=,\\\*=)*
-
-
 
 
 
@@ -172,9 +156,6 @@
          \*what happens if condition is false}\*
 
     \*}\*
-
-
-
 
 
 
@@ -198,18 +179,7 @@
 
     \*}\*
 
-   
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 *DATA STRUCTURES(containers used to store complex and multiple data)*
 
@@ -251,9 +221,9 @@
 
 *4. Adding items to an array*
 
-&nbsp;   \*array.push() - add at the end\* 
+&nbsp;   \*array.push() - add at the end\*
 
-    \*array.unshift() - at the beginning\*
+    \*array.unshift() - add at the beginning\*
 
 
 *5. Removing array elements*
@@ -271,7 +241,7 @@
 
 *9. array.sort() - arranges array elements in ascending order*
 
-*10. array.slice()- creating a portion of an array using indexing (start,end)*
+*10. array.slice()- creating/slicing a portion of an array using indexing (start,end)*
 
 *11.splice()-1. add elements to an array*
 
@@ -282,14 +252,7 @@
                \*array.splice(starting point, how many to remove)\*
 
             \*3. replace elements in an array\*
-
-
-
-
-
-
-
-
+		\*array.splice(starting point, how many to replace,elements to replace)\*
 
 
 *.OBJECTS*
@@ -392,13 +355,21 @@
 *3) .entities*
 
 
+template literals
+-It's like use formatted strings in python:print(f' the largest number is {result}')
+-in js its:return `Hello, ${name}!`
+-` : backticks - Starts and ends a template literal
+-${ } :interpolation  -${ -Start inserting a variable or expression
+		      -} -End the inserted expression
+-! :Just an exclamation mark in the tex
 
+Compare the syntax
 
-
-
-
-
-
+| Python                 | JavaScript               |
+| ---------------------- | ------------------------ |
+| f"Hello, {name}!"    | `` `Hello, ${name}!`  |
+| Uses `f` before quotes | Uses backticks `|
+| `{name}`               | `${name}`                |
 
 
 *Loops*
@@ -505,15 +476,9 @@
 *5.readability*
 
 
-
 *global variable-a variable that is accessible in the entire program*
 
 *local variable-a variable that is accessible only within its local scope*
-
-
-
-
-
 
 
 *Parameter-a placeholder/temporary  value when defining a function*
@@ -1377,7 +1342,7 @@ install -pip install Flask
 
 *3.Flask extracts form data using the key and processes it*
 
-&nbsp;   \*-> In the decorator ->METHODS THAT CN BE USED\* 
+&nbsp;   \*-> In the decorator ->METHODS THAT CN BE USED\*
 
     \*-> Extract data from the form using a request object\*
 
@@ -1422,4 +1387,4 @@ install -pip install Flask
 
 
 
-1. 
+1.

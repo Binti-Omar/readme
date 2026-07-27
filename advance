@@ -1,99 +1,198 @@
-Advance class
+# Advance class
+
 Installing the following software:
+
 1.Postman
+
 2.Docker desktop
 
+
+
 Create an account on:
+
 1.sentry.io
+
 2.slack.com
 
-			1.rules of a ReST API
-1. Data is transferred as key value-pairs. Sending from JS as JSON Object and from python as dictionary
-2. You must define routes/URL 
-3. You must define a HTTP method(GET,POST,PUT,DELETE,PATCH)
-4. You must define a status code(200,201,404,401,500) 
 
-          SQLACHEMY
+
+&#x09;		1.rules of a ReST API
+
+1\. Data is transferred as key value-pairs. Sending from JS as JSON Object and from python as dictionary
+
+2\. You must define routes/URL 
+
+3\. You must define a HTTP method(GET,POST,PUT,DELETE,PATCH)
+
+4\. You must define a status code(200,201,404,401,500) 
+
+
+
+&#x20;         SQLACHEMY
+
 SQLAlchemy is an ORM.Object relational mapping.
+
 Helps execute queries using methods.
+
 Define the table structure is classes/models.
+
+
 
 Install SQLAlchemy:Pip install flask-sqlalchemy
 
 
+
+
+
 2.VUE(js,html,css)
--Is an open source,progressive javascript framework that is used to build user interfaces and  single page applications(SPA's).
+
+\-Is an open source,progressive javascript framework that is used to build user interfaces and  single page applications(SPA's).
+
+
 
 Importance of vue
+
 1.easy to use 
+
 2.performance-lightweight since it doesn't consume too much resources
 
+
+
 A)practical:
--https://vuejs.org/guide/introduction.html
--use version 2.7.7 
+
+\-https://vuejs.org/guide/introduction.html
+
+\-use version 2.7.7 
+
+
 
 B)vue syntaxes:
+
 D.O.M-Document Object Manipulation
-{{}}interpolination[inserts reactive data into DOM]
-v-model-[is a two way data binding meaning it can get input from the user,can also update your vue data automatically]
-v-for-[used for looping in vue]
+
+{{}}interpolination\[inserts reactive data into DOM]
+
+v-model-\[is a two way data binding meaning it can get input from the user,can also update your vue data automatically]
+
+v-for-\[used for looping in vue]
+
 v-if
+
 v-else
 
+
+
 <p v-if="showMessage">This is shown with v-if</p>
+
 <p v-else>Message is hidden</p>
+
+
 
 data:{
 
+
+
 showMessage : true
+
+
 
 }
 
+
+
 C)METHODS
--methods are functions used inside a class
+
+\-methods are functions used inside a class
+
+
 
 Register feature using vue
+
 1.make sure flask application is running 
+
 2.make a form in register.html
+
+
 
 D)Asynchrous vs Synchorus operation
 
 
+
+
+
 pip install
-from flask_jwt_extended import JWTManager,jwt_required,create_access_token
+
+from flask\_jwt\_extended import JWTManager,jwt\_required,create\_access\_token
+
+
 
 pip install "sentry-sdk" "flask"
 
+
+
 async-used to handle operations that take time without blocking your 	program
-     -it marks a function as asynchronous
-     -it automatically returns a promise
+
+&#x20;    -it marks a function as asynchronous
+
+&#x20;    -it automatically returns a promise
+
+
 
 await-pauses only that function until a result is ready
-     -don't block the whole program
+
+&#x20;    -don't block the whole program
+
+
 
 promise- represents a value that will be available later
 
+
+
 TYPES OF LANGUAGES
+
 1.interprated language-runs code line by line
+
 2.compiled
 
+
+
 Jyson Web Token(jwt)
--is a secure way to authenticate users without storing sessions on server
--it is compact and fast
-  
-      JWT Structure
+
+\-is a secure way to authenticate users without storing sessions on server
+
+\-it is compact and fast
+
+&#x20; 
+
+&#x20;     JWT Structure
+
 1.Header-it has an algorithim and type of token mostly JWT
+
 2.payload-contains the user data to be stored and claims(like expiry time)
+
 3.signature-consists of header and payload and secret key
+
+
 
 Local storage is a browser feature that lets you store data in the browser in key-value pairs
 
+
+
 @submit.prevent
+
 @submit-once a form is submitted,call a function to perform a certain task
+
 prevent-
 
 
+
+
+
 https://github.com/Binti-Omar/budget-flask
+
 https://github.com/Binti-Omar/budget
 
-https://github.com/l-tting/vue_js
+
+
+https://github.com/l-tting/vue\_js
+
