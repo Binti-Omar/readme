@@ -678,26 +678,10 @@ Compare the syntax
 
 
 *PSYCOPG2*
-
-
-
 *Is a PostgreSQL adapater for Python . A driver - connects your Python code to a Postgres database*
-
-
-
 *psycopg2.connect(). - creates a connection between Python and a Postgres database*
-
-
-
-
-
 *create database myduka\_db;*
-
 *\\c myduka\_db*
-
-
-
-
 
 *insert into products(name,buying\_price,selling\_price)values('bread',50,60);*
 
@@ -737,69 +721,13 @@ Compare the syntax
 
 
 
-*CREATE TABLE products (*
+CREATE TABLE products(id SERIAL PRIMARY KEY,product_name VARCHAR(100) NOT NULL,buying_price NUMERIC(20, 2) NOT NULL CHECK (buying_price >= 0),selling_price NUMERIC(20, 2) NOT NULL CHECK (selling_price >= 0));
 
-&nbsp;   \*id SERIAL PRIMARY KEY,\*
+CREATE TABLE sales(id SERIAL PRIMARY KEY,pid int NOT NULL,quantity int not null default 0,created_at timestamp not null default current_timestamp,constraint myproduct foreign key(pid) references products(id) on update cascade on delete restrict);
 
-    \*name VARCHAR(100) NOT NULL,\*
-
-    \*buying\\\_price NUMERIC(20, 2) NOT NULL CHECK (buying\\\_price >= 0),\*
-
-    \*selling\\\_price NUMERIC(20, 2) NOT NULL CHECK (selling\\\_price >= 0)\*
-
-
-*);*
-
-
-
-*CREATE TABLE stock (*
-
-&nbsp;   \*id SERIAL PRIMARY KEY,\*
-
-    \*pid INTEGER NOT NULL REFERENCES products(id) ON DELETE CASCADE,\*
-
-    \*stock\\\_quantity INTEGER NOT NULL CHECK (stock\\\_quantity >= 0),\*
-
-    \*created\\\_at TIMESTAMP DEFAULT CURRENT\\\_TIMESTAMP\*
-
-
-*);*
-
-
-
-*CREATE TABLE sales (*
-
-&nbsp;   \*id SERIAL PRIMARY KEY,\*
-
-    \*pid INTEGER NOT NULL REFERENCES products(id) ON DELETE CASCADE,\*
-
-    \*quantity INTEGER NOT NULL CHECK (quantity > 0),\*
-
-    \*created\\\_at TIMESTAMP DEFAULT CURRENT\\\_TIMESTAMP\*
-
-
-*);*
-
-
-
-*CREATE TABLE users (*
-
-&nbsp;   \*id SERIAL PRIMARY KEY,\*
-
-    \*full\\\_name VARCHAR(255) NOT NULL,\*
-
-    \*email VARCHAR(255) NOT NULL UNIQUE,\*
-
-    \*phone\\\_number VARCHAR(100) NOT NULL,\*
-
-    \*password VARCHAR(255) NOT NULL\*
-
-
-*);*
-
-
-
-
+CREATE TABLE stock (id SERIAL PRIMARY KEY,pid INT NOT NULL,stock_quantity INT NOT NULL DEFAULT 0,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY (pid) REFERENCES products(id) ON UPDATE CASCADE ON DELETE RESTRICT);
+CREATE TABLE users (id SERIAL PRIMARY KEY,fullname VARCHAR(100) NOT NULL,email VARCHAR(100) UNIQUE NOT NULL,password VARCHAR(255) NOT NULL,role VARCHAR(20) NOT NULL DEFAULT 'cashier',created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+When someone logs in, your application checks their role and decides which pages or actions they can access. This helps keep the system secure by ensuring users only perform tasks they're authorized to do.
 
 *CRUD*
 
@@ -1387,4 +1315,54 @@ install -pip install Flask
 
 
 
-1.
+Steps to use while building a project using flask
+Day 1
+
+1.install flask
+	pip install flask
+
+2.Import Flask class from flask framework
+	from flask import Flask
+
+3.create an app object which is the Instance of the class Flask with argument __name__
+	app=Flask(name)
+
+4.create routes for home,products,sales,stock,dashboard,register,login
+
+5.run the app
+	app.run(debug=True)
+
+6.Each Function on a route should return an html file using render_templete
+	=>In Flask All HTML files must be in a folder called templates
+	=>In Flask ALL css,images and javascript files must be in folder called static
+	=>render_template function in flask is used to render html files
+	=>you must import render_template from flask before using it
+
+Day2
+
+1.create a database with the following table products,sales,stock,users
+
+CREATE TABLE products(id SERIAL PRIMARY KEY,product_name VARCHAR(100) NOT NULL,buying_price NUMERIC(20, 2) NOT NULL CHECK (buying_price >= 0),selling_price NUMERIC(20, 2) NOT NULL CHECK (selling_price >= 0));
+
+CREATE TABLE sales(id SERIAL PRIMARY KEY,pid int NOT NULL,quantity int not null default 0,created_at timestamp not null default current_timestamp,constraint myproduct foreign key(pid) references products(id) on update cascade on delete restrict);
+
+CREATE TABLE stock (id SERIAL PRIMARY KEY,pid INT NOT NULL,stock_quantity INT NOT NULL DEFAULT 0,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY (pid) REFERENCES products(id) ON UPDATE CASCADE ON DELETE RESTRICT);
+
+CREATE TABLE users (id SERIAL PRIMARY KEY,fullname VARCHAR(100) NOT NULL,email VARCHAR(100) UNIQUE NOT NULL,password VARCHAR(255) NOT NULL,role VARCHAR(20) NOT NULL DEFAULT 'cashier',created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+When someone logs in, your application checks their role and decides which pages or actions they can access. This helps keep the system secure by ensuring users only perform tasks they're authorized to do.
+
+2.import psycopg2 and connect the database
+
+3.call functions for displaying and inserting values in the various tables
+
+4.make all files bootstrap enabled
+
+5.use jinja to loop through values in various tables to display them.
+
+6.create modals to add products stock and sales
+
+7.style the project and make the home page more appealing
+
+
+Day3

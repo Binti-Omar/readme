@@ -141,3 +141,26 @@ You've just added your first GIS layer.
 
 Module 3: Working with Vector Data
 What is Vector Data?
+A vector layer is a collection of geographic features of the same type.
+
+Examples:
+
+Roads → Line layer
+Hospitals → Point layer
+Counties → Polygon layer
+
+Each layer also has an attribute table, which stores information about the features.
+
+Attribute Table
+Every feature has two parts:
+
+Geometry – The shape (point, line, or polygon).
+Attributes – Information about the feature.
+
+Example:
+
+Hospital Name			Type		Beds
+Kenyatta National Hospital	Referral	1800
+Mbagathi Hospital		County		350
+
+The hospital appears as a point on the map, while the table stores its details.
