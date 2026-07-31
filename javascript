@@ -1317,7 +1317,7 @@ install -pip install Flask
 
 Steps to use while building a project using flask
 Day 1
-
+---
 1.install flask
 	pip install flask
 
@@ -1360,9 +1360,81 @@ When someone logs in, your application checks their role and decides which pages
 
 5.use jinja to loop through values in various tables to display them.
 
-6.create modals to add products stock and sales
+6.create modals with a form to add products ,stock and  sales \*
 
 7.style the project and make the home page more appealing
 
 
 Day3
+1.Navigation using Navbar
+=>we write the routes on the href attribute
+
+2.Posting Data (UI=>server=>Database)
+
+=>You can send data from form on UI to the server-side flask route which then stores it in the database
+
+      HTTP Methods
+
+1.GET ->used when fetching data from a resource
+
+2.POST ->used when sending data to a resource(e.g submitting a form)
+
+  Important Notes
+
+=>Every form input Must have a name attribute ->flask uses this to access the form data
+
+=>In main.py ,Create route that:
+
+&#x20;   1.checks HTTP method (GET or POST)
+
+&#x20;   2.Receives form data from the UI
+
+&#x20;   3.call the insert function to add data to the database
+
+
+
+&#x20;   Request,Redirect,url_for  in Flask
+
+&#x20;   1.Request
+
+=>used to receive data from the form(ui->server)
+
+
+&#x20;   2.Redirect
+
+=>Redirect redirects the user to another url after perfoming an action
+
+  3.url_for
+
+=>Url_for takes the function name then redirects to the route
+NB=>ON the form element we must have Action attribute with route as the value and method attribute with post as the value
+
+
+3.Steps to Add Sales
+We’ll make the sales form more interactive by fetching all available products and displaying them in a dropdown (select) list instead of manually entering product IDs.
+
+1\. Fetch Products for the Sales Page
+
+Before making a sale, we need to display all products fetched from the database:
+
+=> create a variable on render_template e.g(products = products )
+2\. Create the Sales Form in Modal
+
+=>Each form input must have a name attribute.
+
+3.Add the /add\_sales Route
+
+=>This route handles form submission and database insertion.
+
+4.=>Do the Same for Stock
+
+Repeat the same logic for the Stock page:
+
+Fetch all products to display in the form.
+
+Use a <select> for product selection.
+
+Add a POST route to handle adding stock.
+
+Redirect to the stock page after submission.
+

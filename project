@@ -151,7 +151,7 @@ This makes all products available inside the HTML page through the products vari
 <label for="pid">Choose a product:</label>
 <select name="pid" id="pid" class="form-control">
   {% for product in products %}
-    <option value="{{ product\[0] }}">{{ product[1] }}</option>
+    <option value="{{ product\\\\\\\[0] }}">{{ product[1] }}</option>
   {% endfor %}
 </select>
 
@@ -218,9 +218,9 @@ Linking Static Files
 
 Flask uses the url_for() function to link static files inside templates.
 Example:
-<link rel="stylesheet" href="{{ url\_for('static', filename='css/style.css') }}">
-<script src="{{ url\_for('static', filename='js/script.js') }}"></script>
-<img src="{{ url\_for('static', filename='images/logo.png') }}" alt="Logo">
+<link rel="stylesheet" href="{{ url\\\\\\\_for('static', filename='css/style.css') }}">
+<script src="{{ url\\\\\\\_for('static', filename='js/script.js') }}"></script>
+<img src="{{ url\\\\\\\_for('static', filename='images/logo.png') }}" alt="Logo">
 DataTables
 What is DataTables?
 
@@ -248,38 +248,70 @@ Steps to Implement DataTables
 
 <script>
 
-&#x20;         let table = new DataTable('#table');
+\\\&#x20;         let table = new DataTable('#table');
+
+
 
 
 
 
 5.Ensure the Table ID Matches
 
+
+
 <table id="myTable" class="display">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Price</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Product A</td>
-            <td>100</td>
-        </tr>
-    </tbody>
+
+\&#x20;   <thead>
+
+\&#x20;       <tr>
+
+\&#x20;           <th>ID</th>
+
+\&#x20;           <th>Name</th>
+
+\&#x20;           <th>Price</th>
+
+\&#x20;       </tr>
+
+\&#x20;   </thead>
+
+\&#x20;   <tbody>
+
+\&#x20;       <tr>
+
+\&#x20;           <td>1</td>
+
+\&#x20;           <td>Product A</td>
+
+\&#x20;           <td>100</td>
+
+\&#x20;       </tr>
+
+\&#x20;   </tbody>
+
 </table>
 
+
+
 Do the same thing we have done on products table to sales and stock
+
 Expected Outcome
+
 =>By the end of Day 6, you should be able to:
+
 1.Organize your Flask project using a clear folder structure.
+
 2.Link images, CSS, and JavaScript files correctly.
+
 3.Implement DataTables for enhanced table functionality.
-        Task
+
+\&#x20;       Task
+
 Create a route named /dashboard in your Flask app.
+
 Render a dashboard.html file .
+
 have a navbar on dashboard
+
 add dashboad navigation to each page on your application using
+
