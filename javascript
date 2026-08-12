@@ -2867,7 +2867,7 @@ Redirect to the stock page after submission.
 
 
 Day4
-Datatables,template inheritance,inserting and checking user in the database and in the route
+Datatables,template inheritance,inserting and checking user in the database and in the register route
 
 DataTables is a JavaScript library built on jQuery that enhances HTML tables with:
 
@@ -2946,4 +2946,30 @@ Expected Outcome
 
 3.Implement DataTables for enhanced table functionality.
 
+
+
+Day 5
+1.password hashing
+-we must import Bcrypt class from flask_bcrypt for password hashing 
+
+2.login route
+-getting form input
+-import session from flask
+-check if user exists
+-check if password is correct
+-add secret key
+
+3.protecting our pages
+-import wraps from functools
+-add login required to each page that should be protected
+-in the navbar add an if statement in jinja
+-add logout route in main.py and in navbar
+-import flash from flask add add flash where possible
+
+
+what is remaining
+1.add charts in dashboard
+2.calculating profits in database
+3.enabling updating of products
+4.styling the project
 
