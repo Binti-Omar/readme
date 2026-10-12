@@ -1,130 +1,429 @@
-Advance class
+# Advance class
+
 Installing the following software:
+
 1.Postman
+
 2.Docker desktop
 
 Create an account on:
+
 1.sentry.io
+
 2.slack.com
 
-			1.rules of a ReST API
-1. Data is transferred as key value-pairs. Sending from JS as JSON Object and from python as dictionary
-2. You must define routes/URL
-3. You must define a HTTP method(GET,POST,PUT,DELETE,PATCH)
-4. You must define a status code(200,201,404,401,500)
 
-          SQLACHEMY
+
+&#x09;		1.rules of a ReST API
+
+1\. Data is transferred as key value-pairs. Sending from JS as JSON Object and from python as dictionary
+
+2\. You must define routes/URL
+
+3\. You must define a HTTP method(GET,POST,PUT,DELETE,PATCH)
+
+4\. You must define a status code(200,201,404,401,500)
+
+
+
+&#x20;         SQLACHEMY
+
 SQLAlchemy is an ORM.Object relational mapping.
+
 Helps execute queries using methods.
+
 Define the table structure is classes/models.
+
+
 
 Install SQLAlchemy:Pip install flask-sqlalchemy
 
 
+
+
+
 2.VUE(js,html,css)
--Is an open source,progressive javascript framework that is used to build user interfaces and  single page applications(SPA's).
+
+\-Is an open source,progressive javascript framework that is used to build user interfaces and  single page applications(SPA's).
+
+
 
 Importance of vue
+
 1.easy to use
+
 2.performance-lightweight since it doesn't consume too much resources
 
+
+
 A)practical:
--https://vuejs.org/guide/introduction.html
--use version 2.7.7
+
+\-https://vuejs.org/guide/introduction.html
+
+\-use version 2.7.7
+
+
 
 B)vue syntaxes:
+
 D.O.M-Document Object Manipulation
-{{}}interpolination[inserts reactive data into DOM]
-v-model-[is a two way data binding meaning it can get input from the user,can also update your vue data automatically]
-v-for-[used for looping in vue]
+
+{{}}interpolination\[inserts reactive data into DOM]
+
+v-model-\[is a two way data binding meaning it can get input from the user,can also update your vue data automatically]
+
+v-for-\[used for looping in vue]
+
 v-if
+
 v-else
 
+
+
 <p v-if="showMessage">This is shown with v-if</p>
+
 <p v-else>Message is hidden</p>
+
+
 
 data:{
 
+
+
 showMessage : true
+
+
 
 }
 
+
+
 C)METHODS
--methods are functions used inside a class
+
+\-methods are functions used inside a class
+
+
 
 Register feature using vue
+
 1.make sure flask application is running
+
 2.make a form in register.html
+
+
 
 D)Asynchrous vs Synchorus operation
 
 
+
+
+
 pip install
-from flask_jwt_extended import JWTManager,jwt_required,create_access_token
+
+from flask\_jwt\_extended import JWTManager,jwt\_required,create\_access\_token
+
+py -m pip install flask-jwt-extended
+py -m pip install flask-cors
 
 pip install "sentry-sdk" "flask"
 
+
+
 async-used to handle operations that take time without blocking your 	program
-     -it marks a function as asynchronous
-     -it automatically returns a promise
+
+&#x20;    -it marks a function as asynchronous
+
+&#x20;    -it automatically returns a promise
+
+
 
 await-pauses only that function until a result is ready
-     -don't block the whole program
+
+&#x20;    -don't block the whole program
+
+
 
 promise- represents a value that will be available later
 
+
+
 TYPES OF LANGUAGES
+
 1.interprated language-runs code line by line
+
 2.compiled
 
+
+
 Jyson Web Token(jwt)
--is a secure way to authenticate users without storing sessions on server
--it is compact and fast
- 
-      JWT Structure
+
+\-is a secure way to authenticate users without storing sessions on server
+
+\-it is compact and fast
+
+&#x20;
+
+&#x20;     JWT Structure
+
 1.Header-it has an algorithim and type of token mostly JWT
+
 2.payload-contains the user data to be stored and claims(like expiry time)
+
 3.signature-consists of header and payload and secret key
+
+
 
 Local storage is a browser feature that lets you store data in the browser in key-value pairs
 
+
+
 @submit.prevent
+
 @submit-once a form is submitted,call a function to perform a certain task
+
 prevent-
 
 
 
+
+
+
+
+
+
+# ADVANCE CLASS-2
+
 Atlassian-is a software company that makes tools for software development and project management.
-JIRA
--one of the products made by Atlassian.Jira lets the team see what needs to be done, who is doing it, and what has been completed.
+
+#### JIRA
+
+\-one of the products made by Atlassian.Jira lets the team see what needs to be done, who is doing it, and what has been completed.
+
+
 
 Steps while using jira
-We start by creating a space(works as a project)
-Add items in the backlog.
-Create sprints and edit it
-Distribute the items in backlog into sprints
-connect jira to gitflow
+
+* We start by creating a space(works as a project)
+* Add items in the backlog.
+* Create sprints and edit it
+* Distribute the items in backlog into sprints
+* connect jira to gitflow
+
+
 
 Important things
-good description
-a storypoint(timeline)
-assignee
-connecting gitflow workflow to jira we start sprint then go to the board
+
+1. good description
+2. a storypoint(timeline)
+3. assignee
+4. connecting gitflow workflow to jira we start sprint then go to the board
+
+
 
 Steps of creating a .env
+
 Step 1 — Create the .env file
+
 Step 2 — Put your Flask secret key in .env and passwords
+
 Step 3 — Install python-dotenv(pip install python-dotenv)
-Step 4 —  connect .env file to your Python code.Add the imports(from dotenv import load_dotenv,import os,from flask import Flask)
-Step 5 — Tell Python to load the .env file:Immediately after these two lines:load_dotenv()
+
+Step 4 —  connect .env file to your Python code.Add the imports(from dotenv import load\_dotenv,import os,from flask import Flask)
+
+Step 5 — Tell Python to load the .env file:Immediately after these two lines:load\_dotenv()
+
 Step 6 — Add .env to .gitignore
+
 
 
 What you've learned here
 
 You now know the difference between:
 
+
+
 .env → stores sensitive configuration
+
 os.getenv() → retrieves a value from .env
-load_dotenv() → makes .env available to Python
+
+load\_dotenv() → makes .env available to Python
+
 .gitignore → prevents .env from being uploaded to GitHub
+
+
+
+
+
+We will build a Restful API which is a backend app(usually called API)that is responsible of connecting to the database,intergrating your apps to other external APIs e.g payments,email,sms,AI Model...It also does user authentication and connects to An Android App,IOS App.Web App(JS Platform),USSD.
+
+### 1.Rest API
+
+\-Representational State Transfer Application Programming Interface
+
+* REST → Representational State Transfer — a set of architectural principles/style for designing web services.REST is a way of designing an API where resources are accessed through URLs and manipulated using standard HTTP methods, with data commonly exchanged as JSON.
+* API → Application Programming Interface — a way for different software applications to communicate
+
+
+
+###### RULES OF REST API
+
+\# 1. Data is transferred as key value-pairs called JSON.Sending from JS as JSON Object and from python as dictionary
+
+\# 2. You must define routes/URL
+
+\# 3. You must define a HTTP method(GET,POST,PUT,DELETE,PATCH)
+
+\# 4. You must define a status code(200,201,404,401,500)
+
+\# 200 → success,201 → created,400 → bad request,401 → unauthorized,404 — Not Found,409 → conflict (email exists),500 → server error
+
+
+
+###### Steps to follow
+
+* Create a new project and add a file called main.py then import Flask,request and jsonify(enables us to return data as json) from flask,import json.Create a class instance and create a home route.we will use postman to confirm if our api is working since we only have a backend and not a frontend to confirm our project
+* Postman-create a new collection(collection is like a folder in postman)
+* Create a new file models.py and create the tables.(Mapped describes the Python type.mapped\_column() describes the database column.Base is the parent class that your database models inherit from.)
+
+
+
+ORM(Object Relational Mapper)-https://docs.sqlalchemy.org/en/20/orm/index.html
+
+https://docs.sqlalchemy.org/en/20/orm/quickstart.html#declare-models
+
+
+
+All class begin with a capital letter and are singular
+
+
+
+https://www.youtube.com/watch?v=jobpptS9f8I
+
+install SQLite viewer by florian klampfer from vs code extension
+
+query = select(Product)
+products = session.scalars(query)
+session.scalars() receives the query and gives you the values/objects from the Product table, but technically it doesn't permanently store them in the session. It returns a result that you can work with.
+
+Post - used when data is sent to an application by the client
+Try catch - used to catch errors for programms.If something goes wrong it catches any possibe error found
+
+session.add (argument)-adds all input from the client
+session.commit()-permanently saves data in db
+
+@app.before\_request-handles any request sent to the api
+
+
+
+JWT
+1.JWTmanager-intialiazes jwt authentication for flask app
+2.jwt\_required-its like a decorater.tells user
+3.create\_access\_token
+4.get\_jwt\_identity
+
+
+
+Sentry
+
+\-Sentry is a tool used to track errors in our code.Sentry stores the error for us in the issues and also send us an email with the details about the error so that you fix the error.Steps to get started in sentry:
+
+1. Create an account on sentry.io,create a project and choose platform.
+2. Copy the import in the code
+3. Copy the sentry sdk
+4. Create an error like removing a colon in the "/" route
+5. Go to that route you created an error in postman and send
+6. Go to sentry,issues you should see the detailed error
+
+
+
+Slack
+
+Slack is used for notifications.Its like WhatsApp for developers for tracking issues in sentry and tasks in jira.It stores issues as different channels.A project in jira is connected to a channel in slack
+
+1. Create an account in slack.com and add a team
+2. Download the slack mobile app and login in on your phone.
+
+
+
+#### TOPICS DONE
+
+1. Jira
+2. Gitflow workflow
+3. SQLalchemy orm
+4. Password Harshing
+5. Jason Web Token(JWT)
+6. Sentry and Slack
+
+
+
+\****intro to vue JS***
+Vue is a JavaScript Framework for building FrontEnd Web Applications.It is easier to learn coming from Vanilla JS than jumping straight to React,Angular
+
+
+
+Advantages of using a JS framework
+
+1. Two way data binding - Creating a variable in JS and displaying it easily on an html element.
+2. Enables JS if statements and FOR Loops on HTML
+3. Enables calling of JS methods in HTML Elements
+4. Enables making requests to an API through a JS library called Axios(Fetch/Store data)
+
+
+M-PESA STK-PUSH
+1.To make a payment an STK push is made to the customer via Safaricom
+
+How the whole process works
+1.server send consumer_key and consumer_secret to daraja api then daraja send back a token valid for an hour 
+2.stk push request is sent from the server to daraja then daraja sends back the checkoutrequestid to the api
+3.after the server receives the id it saves the payment as pending in the database
+4.then a prompt is sent to the customer and they enter the pin 
+5.then callback with the result is sent back to the server from daraja api
+6.after the server receives the callback the database saves the payment as complete
+
+server/api enters phone number + amount
+             ↓
+make_stk_push()
+             ↓
+Get M-Pesa access token
+             ↓
+Generate timestamp
+             ↓
+Generate M-Pesa password
+             ↓
+Create STK Push request
+             ↓
+Send request to Safaricom
+             ↓
+Customer receives STK prompt
+             ↓
+Customer enters M-Pesa PIN
+             ↓
+Safaricom sends result to your Callback URL
+
+steps in daraja
+1.create sandbox app-application name(can be any name),lipa n mpesa to get consumer key and consumer secret
+2.api url is gotten from the apis authorization then copied in safurl
+3.M-Pesa Express Simulate then simulate then open simulator then choose your app and get the short_code(business shortcode),passkey and saf_stkpush_url  found at the post button
+4.open ngrok and download winget via microsoft store the copy the            command and paste in command prompt
+5.search ngrok and sign in get start with local host then go to your authtoken copy then command line and paste the authtoken replacing the $ sign then press enter and run the command ngrok http port number(5000) then enter make sure your api is running
+5.copy "https://shelter-verbose-compress.ngrok-free.dev/stk-call-back" from the ngrok as my_callback_url
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
