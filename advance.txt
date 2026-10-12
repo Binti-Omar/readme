@@ -408,6 +408,56 @@ steps in daraja
 5.search ngrok and sign in get start with local host then go to your authtoken copy then command line and paste the authtoken replacing the $ sign then press enter and run the command ngrok http port number(5000) then enter make sure your api is running
 5.copy "https://shelter-verbose-compress.ngrok-free.dev/stk-call-back" from the ngrok as my_callback_url
 
+vs code-installing
+postman
+ngrok
+docker
+app
+TikTok
+jigsaw eva period
+
+chrome default
+sentry-https://sentry.io/auth/login/tech-camp-19/
+
+slack-https://app.slack.com/client/T0C04UT2JNB/C0C0N85H7A5?entry_point=default_oauth
+
+tech -https://meet.google.com/tny-tqxz-ugu
+
+jira-https://www.atlassian.com/software/jira
+
+qgis-https://docs.qgis.org/3.44/en/docs/training_manual/basic_map/overview.html
+
+gg scholar-https://scholar.google.com/
+
+tech camp-https://portal.techcamp.co.ke/user/bootcamps
+
+firefox
+fontawesome-https://fontawesome.com/icons
+
+fa cdn-https://cdnjs.com/libraries/font-awesome
+
+vue cdn-https://cdnjs.com/libraries/vue/2.2.0
+
+bootstrap-https://getbootstrap.com/docs/5.3/getting-
+started/introduction/
+
+hackerrank-https://www.hackerrank.com/dashboard
+
+GitHub-https://github.com/dashboard
+
+netlify-https://app.netlify.com/teams/zarifah/projects
+
+w3schools-https://www.w3schools.com/python/default.asp
+
+youtube-https://www.youtube.com/
+
+python-https://docs.google.com/presentation/d/107aSJQAeeOaLwESlp4YWzK6AJADfVgdzTobqOOwxO0o/edit?slide=id.p1#slide=id.p1
+
+html-https://docs.google.com/presentation/d/1L31Ia45ByT4KwhOha4neAGUnFbqng8ftPEUuirVIoJ8/edit?slide=id.g167ed371ff4_0_199#slide=id.g167ed371ff4_0_199
+
+advance doc-https://docs.google.com/presentation/d/1PTj7kkfIAFILY8iJoB_UdEgvAK7fXyJGoF0zb-KuVsg/edit?slide=id.p#slide=id.p
+
+
 
 
 
